@@ -1,0 +1,140 @@
+.mainDiv {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.navMain {
+  display: flex;
+  justify-content: space-between;
+  background-color: #7a057a;
+  padding: 20px;
+  color: white;
+
+}
+
+.filterDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  line-height: 0;
+}
+
+table{
+  width: 100%;
+  border: solid 1px;
+}
+table,
+tr,
+td,
+th {
+   border: solid 2px;
+  border-collapse: collapse;
+  text-align: center;
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+input,
+select {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: .3s;
+}
+
+input:focus {
+  border-color: rgb(99, 101, 103);
+  box-shadow: 0 0 1px 0 rgb(73, 74, 75);
+}
+
+.gridCenter {
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+}
+
+.button {
+  padding: 0 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+  color: #7a057a;
+  font-weight: 500;
+  font-size: 16px;
+  transition: border-radius 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+  border-radius: 8px;
+  background-color: #7a057a;
+  color: white;
+  border: 1px solid white;
+}
+
+.buttonSave {
+  padding: 7px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #7a057a;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  border: 1px solid #7a057a;
+  transition: border-radius 0.3s ease, background-color 0.3s ease;
+}
+
+.buttonSave:hover {
+  border-radius: 8px;
+  background-color: white;
+  color: #7a057a;
+  border: 1px solid #7a057a;
+
+}
+
+.deleteBtn {
+  padding: 7px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(93, 75, 75, 1);
+  color: white;
+  font-weight: 500;
+  border: 1px solid rgba(93, 75, 75, 1);
+  margin-left: 6px;
+  font-size: 16px;
+  transition: border-radius 0.3s ease, background-color 0.3s ease;
+}
+
+.deleteBtn:hover {
+  border-radius: 8px;
+  background-color: white;
+  color: rgba(93, 75, 75, 1);
+  border: 1px solid rgba(93, 75, 75, 1);
+
+}
+
+@media only screen and (max-width: 767px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  .scroll {
+    max-width: 800px !important;
+    overflow-x: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+  }
+}
